@@ -1,0 +1,23 @@
+load("/Users/kylin/Desktop/贝叶斯树/new/eclsk_c.Rdata")
+ls()
+str(eclsk)        
+summary(eclsk)  
+head(eclsk)      
+str(eclsk_c)       
+summary(eclsk_c)   
+head(eclsk_c)     
+objs <- ls()#
+
+for (obj in objs) {#
+  if (is.data.frame(get(obj))) {#
+    write.csv(get(obj), file = paste0(obj, ".csv"), row.names = FALSE)#
+  }#
+}
+getwd()
+objs <- ls()#
+#
+for (obj in objs) {#
+  if (is.data.frame(get(obj))) {#
+    cat(obj, ": ", nrow(get(obj)), "行 ×", ncol(get(obj)), "列\n")#
+  }#
+}
