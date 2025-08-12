@@ -13,8 +13,6 @@ The code is provided solely to ensure the reproducibility of the methods describ
 
 ## Data Access
 The dataset used in this study is from the Early Childhood Longitudinal Study – Kindergarten (ECLS-K).  
-Due to licensing restrictions, the raw data cannot be redistributed here.  
-Please refer to the official NCES website for data access instructions.
 
 ## Usage
 1. Clone this repository:
